@@ -57,7 +57,7 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: { baseURL: 'https://harassment-generator.herokuapp.com/' },
+  axios: { /*baseURL: 'https://harassment-generator.herokuapp.com/'*/ },
   proxy: {
     '/wikipedia-api': {
       target: 'https://ja.wikipedia.org',
