@@ -7,7 +7,7 @@ const routerBase =
         }
       }
     : {}
-
+    
 module.exports = {
   mode: 'spa',
   /*
