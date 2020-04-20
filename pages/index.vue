@@ -66,7 +66,7 @@ export default {
     async getWord() {
       this.isLoading = true
       const url =
-        'https://ja.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=1&format=json'
+        '/wikipedia-api/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=1&format=json'
       let data = await this.$axios
         .$get(url)
         .then((res) => {
@@ -75,7 +75,7 @@ export default {
 
           this.$axios
             .$get(
-              'https://ja.wikipedia.org/w/api.php?action=query&titles=' +
+              '/wikipedia-api/w/api.php?action=query&titles=' +
                 title +
                 '&format=json&prop=categories'
             )
